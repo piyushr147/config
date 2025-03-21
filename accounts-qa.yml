@@ -7,7 +7,7 @@ build:
   version: "2.0"
 
 accounts:
-  message: "This is the contact file for QA accounts env"
+  message: "This is the contact file for Quality Asuurance(QA) accounts env"
   info:
     name: "Keshav - QA lead"
     email: "keshavbajaj@gmail.com"
