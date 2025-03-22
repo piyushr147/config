@@ -7,7 +7,7 @@ build:
   version: "3.0"
 
 loans:
-  message: "This is the contact file for webhooks loans env"
+  message: "This is the contact file for Prod loans env"
   info:
     name: "Sachin Rawat"
     email: "rawatsachin@gmail.com"
