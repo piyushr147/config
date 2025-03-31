@@ -1,12 +1,13 @@
 server:
-  port: 8070
+  port: 8070  # The Eureka Server will run on port 8070
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: localhost  # The hostname of the Eureka Server (can be changed if running on a different machine)
   client:
-    fetchRegistry: false
-    registerWithEureka: false
+    fetchRegistry: false  # Since this is the Eureka Server, it does NOT need to fetch a registry of other services(this is the register).
+    registerWithEureka: false  # The Eureka Server does NOT register itself as a service (only client services register).
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-    
+      # This defines the Eureka Server's own service URL, used by clients to register themselves.
+      # The value expands to "http://localhost:8070/eureka/".
